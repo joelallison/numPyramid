@@ -11,11 +11,14 @@ public class Main {
             System.out.print("\n");
         }
         for (int i = maxValue + 1; i > 0; i--) {
-            for (int j = 1; j <= maxValue; j++) {
+            for (int j = 1; j < i-1; j++) {
                 System.out.print(j);
             }
             System.out.print("\n");
         }
+    }
+    static void paddedNumberPyramid(int maxValue) {
+
     }
 
     public static void main(String[] args) {
@@ -29,13 +32,8 @@ public class Main {
                 numberPyramid(chosenValue);
                 break;
             case "p":
-                //paddedNumberPyramid(chosenValue);
+                paddedNumberPyramid(chosenValue);
                 break;
         }
-        /* Scanner input = new Scanner(System.in);
-        int userChoice = input.nextInt();
-        if ((userChoice % 2) == 0){
-            System.out.println("value is even.");
-        }else{ System.out.println("value is odd."); } */
     }
 }
