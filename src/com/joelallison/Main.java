@@ -18,7 +18,18 @@ public class Main {
         }
     }
     static void paddedNumberPyramid(int maxValue) {
-
+        String line = "";
+        for (int i = 1; i < maxValue + 1; i++) {
+            for (int j = 1; j<= i; j++) {
+                line = line + j;
+            }for (int x = 0; x < (maxValue+line.length())/2; i++){ System.out.print(" ");System.out.print(line + "\n"); }
+        }
+        for (int i = maxValue + 1; i > 0; i--) {
+            for (int j = 1; j < i-1; j++) {
+                line = line + j;
+                System.out.println(line + "\t\t" + j);
+            }for (int x = 0; x < (maxValue+line.length())/2; i++){ System.out.print(" ");System.out.print(line + "\n"); }
+        }
     }
 
     public static void main(String[] args) {
